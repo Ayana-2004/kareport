@@ -12,7 +12,7 @@ export default function Header() {
         </div>
         <a
           href="#enquiry"
-          className="rounded-sm bg-teal px-5 py-2.5 font-mono text-xs tracking-wide text-paper hover:bg-teal-2"
+          className="rounded-sm bg-teal px-5 py-2.5 font-display text-sm font-semibold tracking-wide text-paper hover:bg-teal-2"
         >
           Start your enquiry
         </a>

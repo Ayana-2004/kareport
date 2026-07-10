@@ -52,7 +52,7 @@ export default function Footer() {
             rel="noopener"
             className="flex items-center gap-2 no-underline"
           >
-            <img src="/Faircode.png" alt="Faircode Infotech" className="h-7 w-auto" />
+            <img src="/Faircode.webp" alt="Faircode Infotech" className="h-4 w-auto" />
           </a>
         </div>
       </div>

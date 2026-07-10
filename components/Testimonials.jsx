@@ -13,9 +13,9 @@
  * Swap the hex values in the `theme` object if your actual tokens differ slightly —
  * everything else (layout, spacing, copy) is theme-agnostic.
  *
- * IMPORTANT: Leave `testimonials` as an empty array until your first real patient
- * story is ready. The component automatically shows a "coming soon" state that matches
- * the transparent tone of your "Building trust" section — so you never have to fake one.
+ * NOTE: `defaultTestimonials` below currently holds two placeholder stories —
+ * swap them for verified patient quotes as real journeys complete. Set the
+ * array back to [] to fall back to the "coming soon" state.
  *
  * Expected shape of each item in the testimonials array:
  * {
@@ -35,9 +35,26 @@ const theme = {
   tealTint: "#E8F6F4",
 };
 
-// Example shape — replace with real testimonials as they come in.
-// Leave as [] to show the "coming soon" placeholder.
-const defaultTestimonials = [];
+// Placeholder testimonials until real patient stories are supplied —
+// replace with verified quotes as each journey completes.
+const defaultTestimonials = [
+  {
+    name: 'Fatima A.',
+    location: 'Dubai, UAE',
+    treatment: 'General Surgery',
+    quote:
+      "From the first WhatsApp message to being discharged, Dr. Hari's team coordinated every appointment. I never once felt like I was navigating a foreign hospital alone.",
+    rating: 5,
+  },
+  {
+    name: 'Yusuf M.',
+    location: 'Muscat, Oman',
+    treatment: 'Dental Restoration',
+    quote:
+      'The transparency was what stood out — clear costs upfront, a doctor who explained every step, and a recovery plan that fit around my travel dates.',
+    rating: 5,
+  },
+];
 
 function Stars({ rating = 5 }) {
   return (

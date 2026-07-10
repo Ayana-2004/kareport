@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="mt-10 flex flex-wrap items-center gap-5">
           <a
             href="#enquiry"
-            className="rounded-sm border border-gold bg-gold px-7 py-4 font-mono text-sm text-[#1B1305] transition hover:bg-gold-2"
+            className="rounded-sm border border-gold bg-gold px-7 py-4 font-display text-base font-semibold text-[#1B1305] transition hover:bg-gold-2"
           >
             Start your enquiry →
           </a>
@@ -48,7 +48,7 @@ export default function Hero() {
 
       <div className="border-t border-paper/15 bg-teal-2">
         <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-7 px-6 py-5">
-          <span className="flex-1 basis-56 font-mono text-xs text-[#CBDDD2]">
+          <span className="flex-1 basis-56 font-display text-sm font-semibold text-[#CBDDD2]">
             Led by a Kerala-based doctors&apos; panel
           </span>
           <span className="flex-1 basis-56 font-mono text-xs text-[#CBDDD2]">
