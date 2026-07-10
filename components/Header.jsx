@@ -14,7 +14,7 @@ export default function Header() {
           href="#enquiry"
           className="rounded-sm bg-teal px-5 py-2.5 font-display text-sm font-semibold tracking-wide text-paper hover:bg-teal-2"
         >
-          Start your enquiry
+          Enquiry
         </a>
       </div>
     </header>

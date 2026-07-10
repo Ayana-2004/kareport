@@ -64,7 +64,7 @@ export default function DoctorProfiles() {
               <img
                 src={d.photo}
                 alt={d.name}
-                className="h-40 w-32 shrink-0 rounded-sm object-cover sm:h-auto"
+                className="h-72 w-full shrink-0 rounded-lg object-cover object-top sm:h-auto sm:w-2/5 sm:self-stretch"
               />
               <div className="flex-1">
                 <span className="inline-block rounded-full bg-teal/10 px-3 py-1 font-mono text-[11px] uppercase tracking-wide text-teal">

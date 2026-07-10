@@ -38,7 +38,7 @@ export default function Hero() {
             href="#enquiry"
             className="rounded-sm border border-gold bg-gold px-7 py-4 font-display text-base font-semibold text-[#1B1305] transition hover:bg-gold-2"
           >
-            Start your enquiry →
+            Start Your Enquiry →
           </a>
           <span className="text-sm text-[#AFC7B7]">
             A clinical coordinator responds within 48 hours.
