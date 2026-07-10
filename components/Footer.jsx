@@ -36,6 +36,14 @@ export default function Footer() {
           <div>© 2026 KarePort. Kerala Health System.</div>
           <div>Doctor-led. Nationally certified partner hospitals.</div>
         </div>
+        <div className="flex flex-wrap gap-4 pt-3 text-xs text-[#7FA08C]">
+          <a href="/privacy-policy" className="no-underline hover:text-paper">
+            Privacy Policy
+          </a>
+          <a href="/terms" className="no-underline hover:text-paper">
+            Terms of Service
+          </a>
+        </div>
         <div className="mt-4 flex items-center gap-2.5 border-t border-paper/10 pt-4">
           <span className="text-xs text-[#7FA08C]">Built by</span>
           <a

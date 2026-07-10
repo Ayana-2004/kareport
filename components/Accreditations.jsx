@@ -19,6 +19,8 @@
  * NABH/JCI callout while Certifications.jsx keeps the per-hospital badge details.
  */
 
+import { AccreditationBadge } from './AccreditationBadge';
+
 const theme = {
   teal: "#028090",
   seafoam: "#00A896",
@@ -40,24 +42,23 @@ const accreditations = [
     blurb:
       "India's official healthcare quality certification, awarded only to hospitals that meet strict, independently audited standards of care and safety.",
   },
+  {
+    // Placeholder — exact certifying body / scope for the Ayurveda network
+    // pending confirmation from the clinical team.
+    code: "AYUSH",
+    name: "AYUSH Certification [pending confirmation]",
+    blurb:
+      "Recognises Ayurveda and Panchakarma centres meeting India's official traditional-medicine care standards. Exact certifying body and scope to be confirmed.",
+  },
+  {
+    // Placeholder — exact certifying body / scope for the dental network
+    // pending confirmation from the clinical team.
+    code: "OHSP",
+    name: "Oral Health Standards Programme [pending confirmation]",
+    blurb:
+      "Covers advanced dental care facilities audited for hygiene, safety and clinical protocol. Exact certifying body and scope to be confirmed.",
+  },
 ];
-
-function BadgeIcon() {
-  return (
-    <svg viewBox="0 0 48 48" className="h-10 w-10">
-      <circle cx="24" cy="18" r="12" fill={theme.teal} />
-      <path d="M15 28l-4 14 13-6 13 6-4-14" fill={theme.seafoam} />
-      <path
-        d="M18 18.5l4 4 8-8"
-        stroke="#FFFFFF"
-        strokeWidth="2.4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-    </svg>
-  );
-}
 
 export default function Accreditations() {
   return (
@@ -77,7 +78,7 @@ export default function Accreditations() {
           className="text-3xl font-bold sm:text-4xl"
           style={{ color: theme.tealDark }}
         >
-          Backed by the two accreditations that matter most
+          Backed by the accreditations that matter most
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-slate-600">
           Every partner hospital in the KarePort network is certified against
@@ -92,7 +93,7 @@ export default function Accreditations() {
             className="flex gap-5 rounded-2xl bg-white p-7 shadow-[0_10px_30px_-12px_rgba(7,59,76,0.15)] ring-1 ring-black/5"
           >
             <div className="shrink-0">
-              <BadgeIcon />
+              <AccreditationBadge code={a.code} />
             </div>
             <div>
               <div className="flex items-baseline gap-2">
@@ -120,7 +121,8 @@ export default function Accreditations() {
         <svg viewBox="0 0 20 20" className="h-4 w-4" fill={theme.teal}>
           <path d="M10 1l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V4l7-3z" />
         </svg>
-        Every hospital shown below is JCI or NABH certified — see which applies to each.
+        Every hospital shown below is certified against one or more of these standards —
+        see which applies to each.
       </div>
     </section>
   );

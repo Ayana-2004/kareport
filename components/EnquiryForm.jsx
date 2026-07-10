@@ -10,6 +10,8 @@ import { useState } from 'react';
 
 const WHATSAPP_NUMBER = '919400028226'; // Dr. Hari's team — India country code + number
 
+const TREATMENT_CATEGORIES = ['Ayurveda', 'Allopathy', 'Dentistry', 'Other'];
+
 function isValidEmail(v) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 }
@@ -18,7 +20,13 @@ function isValidPhone(v) {
 }
 
 export default function EnquiryForm() {
-  const [values, setValues] = useState({ fullName: '', email: '', phone: '' });
+  const [values, setValues] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    treatmentCategory: '',
+    comments: '',
+  });
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [whatsappHref, setWhatsappHref] = useState('#');
@@ -28,20 +36,41 @@ export default function EnquiryForm() {
     setValues((prev) => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
 
     const nameOk = values.fullName.trim().length > 1;
     const emailOk = isValidEmail(values.email.trim());
     const phoneOk = isValidPhone(values.phone.trim());
+    const treatmentCategoryOk = values.treatmentCategory.trim().length > 0;
 
-    setErrors({ fullName: !nameOk, email: !emailOk, phone: !phoneOk });
-    if (!nameOk || !emailOk || !phoneOk) return;
+    setErrors({
+      fullName: !nameOk,
+      email: !emailOk,
+      phone: !phoneOk,
+      treatmentCategory: !treatmentCategoryOk,
+    });
+    if (!nameOk || !emailOk || !phoneOk || !treatmentCategoryOk) return;
 
     const message =
       `Hi Welfare Team at KarePort, I am exploring medical, dental, and Ayurveda integrated packages in Kerala. ` +
       `I would like to speak to a coordinator regarding my concern.\n\n` +
-      `Name: ${values.fullName}\nEmail: ${values.email}\nPhone: ${values.phone}`;
+      `Name: ${values.fullName}\nEmail: ${values.email}\nPhone: ${values.phone}\n` +
+      `Treatment category: ${values.treatmentCategory}` +
+      (values.comments.trim() ? `\nAdditional notes: ${values.comments.trim()}` : '');
+
+    // Best-effort: automated email + WhatsApp acknowledgment run server-side.
+    // The client always sees the confirmation screen and the manual WhatsApp
+    // fallback below, whether or not those integrations are configured yet.
+    try {
+      await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(values),
+      });
+    } catch (err) {
+      console.error('Enquiry notification request failed:', err);
+    }
 
     setWhatsappHref(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`);
     setSubmitted(true);
@@ -131,6 +160,46 @@ export default function EnquiryForm() {
           className={inputClass(errors.phone)}
         />
         {errors.phone && <p className="mt-1.5 text-sm text-[#9A3B2A]">Please enter a valid phone number.</p>}
+      </div>
+
+      <div className="mb-5">
+        <label htmlFor="treatmentCategory" className="mb-2 block font-mono text-xs uppercase tracking-wide text-leaf">
+          Treatment category
+        </label>
+        <select
+          id="treatmentCategory"
+          name="treatmentCategory"
+          value={values.treatmentCategory}
+          onChange={handleChange}
+          className={inputClass(errors.treatmentCategory)}
+        >
+          <option value="" disabled>
+            Select a category
+          </option>
+          {TREATMENT_CATEGORIES.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+        {errors.treatmentCategory && (
+          <p className="mt-1.5 text-sm text-[#9A3B2A]">Please select a treatment category.</p>
+        )}
+      </div>
+
+      <div className="mb-5">
+        <label htmlFor="comments" className="mb-2 block font-mono text-xs uppercase tracking-wide text-leaf">
+          Additional requirements or comments (optional)
+        </label>
+        <textarea
+          id="comments"
+          name="comments"
+          value={values.comments}
+          onChange={handleChange}
+          rows={3}
+          placeholder="Any specific conditions, dates, or preferences we should know about"
+          className={inputClass(false)}
+        />
       </div>
 
       <button
