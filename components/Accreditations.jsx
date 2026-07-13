@@ -1,25 +1,9 @@
-/**
- * Accreditations.jsx
- *
- * A dedicated strip that highlights NABH and JCI specifically — the two most
- * important quality marks for medical tourism patients, called out on their own
- * rather than buried in the hospital cards. International patients often don't
- * know what these acronyms mean, so each one gets a one-line plain-English explainer.
- *
- * Good placement: right after the Hero, or right before/inside "Empanelled hospitals".
- *
- * import Accreditations from "@/components/Accreditations";
- * ...
- * <Accreditations />
- *
- * Colors reuse your existing teal palette — adjust the `theme` object if needed.
- *
- * Note: your project already has a Certifications.jsx — if that's rendering similar
- * content, either merge this into it or use this as the more prominent, dedicated
- * NABH/JCI callout while Certifications.jsx keeps the per-hospital badge details.
- */
+// A dedicated section that explains each accreditation mark in plain English,
+// then shows which of them apply to each treatment category. International
+// patients often don't know what these acronyms mean, so every code gets a
+// one-line explainer rather than being buried in per-hospital badges.
 
-import { AccreditationBadge } from './AccreditationBadge';
+import { AccreditationBadge, AccreditationChip } from './AccreditationBadge';
 
 const theme = {
   teal: "#028090",
@@ -54,6 +38,12 @@ const accreditations = [
     blurb:
       "Recognises advanced dental care facilities that meet rigorous standards for hygiene, patient safety, and clinical excellence.",
   },
+];
+
+const CATEGORIES = [
+  { name: 'Modern Medicine', codes: ['JCI', 'NABH'] },
+  { name: 'Ayurveda', codes: ['Ayur Diamond', 'Ayur Gold', 'Ayur Silver'] },
+  { name: 'Dentistry', codes: ['NABH', 'JCI'] },
 ];
 
 export default function Accreditations() {
@@ -109,16 +99,25 @@ export default function Accreditations() {
         ))}
       </div>
 
-      {/* Optional reassurance strip — remove if it feels redundant with your hero trust badges */}
-      <div
-        className="mt-8 flex items-center justify-center gap-2 rounded-xl py-3 text-sm font-medium"
-        style={{ backgroundColor: theme.tealTint, color: theme.tealDark }}
-      >
-        <svg viewBox="0 0 20 20" className="h-4 w-4" fill={theme.teal}>
-          <path d="M10 1l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V4l7-3z" />
-        </svg>
-        Every hospital shown below is certified against one or more of these standards —
-        see which applies to each.
+      <div className="mt-10 rounded-2xl bg-white p-7 shadow-[0_10px_30px_-12px_rgba(7,59,76,0.15)] ring-1 ring-black/5">
+        <div
+          className="text-sm font-semibold uppercase tracking-wide"
+          style={{ color: theme.tealDark }}
+        >
+          Which accreditation applies to each treatment category
+        </div>
+        <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          {CATEGORIES.map((cat) => (
+            <div key={cat.name} className="rounded-xl bg-slate-50 p-4">
+              <div className="text-sm font-semibold text-slate-700">{cat.name}</div>
+              <div className="mt-2.5 flex flex-wrap gap-2">
+                {cat.codes.map((code) => (
+                  <AccreditationChip key={code} code={code} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

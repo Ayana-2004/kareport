@@ -3,7 +3,6 @@ import Hero from '../components/Hero';
 import WhyKerala from '../components/WhyKerala';
 import Features from '../components/Features';
 import Journey from '../components/Journey';
-import Certifications from '../components/Certifications';
 import Enquiry from '../components/Enquiry';
 import Footer from '../components/Footer';
 // import Testimonials from '../components/Testimonials';
@@ -22,7 +21,6 @@ export default function Home() {
       <WhyKerala />
       <Features />
       <Journey />
-      <Certifications />
       <DoctorProfiles />
       {/* <Testimonials /> */}
       <Enquiry />
