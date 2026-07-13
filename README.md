@@ -23,7 +23,6 @@ components/
   Features.jsx          → 6 feature cards, driven by a data array
   Journey.jsx            → 5-step timeline, driven by a data array
   Certifications.jsx
-  Progress.jsx
   Enquiry.jsx             → layout wrapper around the form
   EnquiryForm.jsx         → 'use client' — the only interactive piece
   Footer.jsx

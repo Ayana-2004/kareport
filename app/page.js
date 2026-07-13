@@ -4,7 +4,6 @@ import WhyKerala from '../components/WhyKerala';
 import Features from '../components/Features';
 import Journey from '../components/Journey';
 import Certifications from '../components/Certifications';
-import Progress from '../components/Progress';
 import Enquiry from '../components/Enquiry';
 import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
@@ -25,7 +24,6 @@ export default function Home() {
       <Journey />
       <Certifications />
       <DoctorProfiles />
-      <Progress />
       <Testimonials />
       <Enquiry />
       <Footer />
