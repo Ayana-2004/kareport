@@ -28,7 +28,8 @@ export default function WhyKerala() {
               <strong className="mb-1 block font-display text-base font-semibold">
                 Built for the journey, not just the procedure
               </strong>
-              Travel, stay, treatment, diet and follow-up are held under a single curated plan.
+              Every aspect of your journey—from travel and accommodation to treatment and
+              follow-up—is coordinated through a single, personalised care plan.
             </li>
           </ul>
         </div>

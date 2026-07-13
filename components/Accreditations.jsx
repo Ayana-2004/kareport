@@ -34,29 +34,25 @@ const accreditations = [
     code: "JCI",
     name: "Joint Commission International",
     blurb:
-      "The same global gold-standard accreditation held by top hospitals in the US, UK and Gulf — verifying patient safety and clinical quality at an international benchmark.",
+      "The same globally recognised gold-standard accreditation held by leading hospitals across the US, UK, and the Gulf, ensuring the highest standards of patient safety and clinical quality.",
   },
   {
     code: "NABH",
     name: "National Accreditation Board for Hospitals",
     blurb:
-      "India's official healthcare quality certification, awarded only to hospitals that meet strict, independently audited standards of care and safety.",
+      "India's premier healthcare accreditation, awarded to hospitals that meet rigorous, independently audited standards of quality and patient safety.",
   },
   {
-    // Placeholder — exact certifying body / scope for the Ayurveda network
-    // pending confirmation from the clinical team.
     code: "AYUSH",
-    name: "AYUSH Certification [pending confirmation]",
+    name: "AYUSH Certification",
     blurb:
-      "Recognises Ayurveda and Panchakarma centres meeting India's official traditional-medicine care standards. Exact certifying body and scope to be confirmed.",
+      "Recognises Ayurveda and Panchakarma centres that meet India's recognised traditional medicine care standards.",
   },
   {
-    // Placeholder — exact certifying body / scope for the dental network
-    // pending confirmation from the clinical team.
     code: "OHSP",
-    name: "Oral Health Standards Programme [pending confirmation]",
+    name: "Oral Health Standards Programme",
     blurb:
-      "Covers advanced dental care facilities audited for hygiene, safety and clinical protocol. Exact certifying body and scope to be confirmed.",
+      "Recognises advanced dental care facilities that meet rigorous standards for hygiene, patient safety, and clinical excellence.",
   },
 ];
 
@@ -81,8 +77,8 @@ export default function Accreditations() {
           Backed by the accreditations that matter most
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-slate-600">
-          Every partner hospital in the KarePort network is certified against
-          international and national quality standards — not just claimed, but audited.
+          Every hospital in the KarePort network is accredited to internationally and
+          nationally recognised quality standards—not just self-claimed, but independently audited.
         </p>
       </div>
 

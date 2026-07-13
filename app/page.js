@@ -6,7 +6,7 @@ import Journey from '../components/Journey';
 import Certifications from '../components/Certifications';
 import Enquiry from '../components/Enquiry';
 import Footer from '../components/Footer';
-import Testimonials from '../components/Testimonials';
+// import Testimonials from '../components/Testimonials';
 import Accreditations from '../components/Accreditations';
 import DoctorProfiles from '../components/DoctorProfiles';
 // This is the entire page. Because it does no data fetching and holds no
@@ -24,7 +24,7 @@ export default function Home() {
       <Journey />
       <Certifications />
       <DoctorProfiles />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Enquiry />
       <Footer />
     </main>

@@ -1,11 +1,11 @@
 // Keeping this as a plain data array (instead of hardcoding 6 blocks of JSX)
 // means adding a 7th feature later is a one-line change, not a copy-paste job.
 const FEATURES = [
-  { n: '01', title: '1-on-1 doctor guidance', body: 'Direct supervision by an expert panel of doctors, from your first message onward.' },
-  { n: '02', title: 'Integrated care plan', body: 'Pick-up to drop-off, every stage of your visit supervised by the doctors\u2019 panel.' },
-  { n: '03', title: 'Hospital mapping & appointments', body: 'Matched to the hospital best known for your specific treatment and outcome.' },
-  { n: '04', title: 'Integrated dental programs', body: 'Advanced dentistry, arranged and coordinated as part of your wider care plan.' },
-  { n: '05', title: 'Integrated Ayurveda programs', body: 'Panchakarma and traditional recovery care, woven in where it supports treatment.' },
+  { n: '01', title: '1-on-1 doctor guidance', body: 'Receive direct guidance from an experienced panel of doctors from your very first enquiry.' },
+  { n: '02', title: 'Integrated care plan', body: 'From arrival to departure, every step of your journey is coordinated by our clinical team.' },
+  { n: '03', title: 'Hospital mapping & appointments', body: 'Matched with the hospital and specialist best suited to your condition and treatment needs.' },
+  { n: '04', title: 'Integrated dental programs', body: 'Advanced dental care, seamlessly integrated into your personalised treatment plan.' },
+  { n: '05', title: 'Integrated Ayurveda programs', body: 'Ayurveda and Panchakarma therapies are integrated into your care plan whenever clinically appropriate.' },
   { n: '06', title: 'Enquiry to recovery', body: 'Diet through to follow-up days \u2014 all under one plan crafted by the doctors\u2019 panel.' },
 ];
 
@@ -14,7 +14,7 @@ export default function Features() {
     <section id="services" className="bg-paper-2 py-20">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="max-w-[20ch] font-display text-3xl font-semibold sm:text-4xl">
-          What KarePort takes care of
+          How KarePort supports your journey
         </h2>
 
         <div className="mt-11 grid grid-cols-1 gap-px border border-ink/25 bg-ink/25 sm:grid-cols-2 lg:grid-cols-3">

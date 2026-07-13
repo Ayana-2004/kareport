@@ -7,7 +7,7 @@ const NAV_LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Doctors', href: '#doctors' },
-  { label: 'Testimonials', href: '#testimonials' },
+  // { label: 'Testimonials', href: '#testimonials' },
   { label: 'Contact', href: '#enquiry' },
 ];
 

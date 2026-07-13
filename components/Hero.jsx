@@ -1,5 +1,5 @@
 const TRUST_BADGES = [
-  'Led by a Kerala-based doctors’ panel',
+  'Guided by a Kerala-based panel of doctors',
   'Nationally certified partner hospitals',
   'End-to-end encrypted record handling',
 ];
@@ -84,7 +84,7 @@ export default function Hero() {
             Start Your Enquiry →
           </a>
           <span className="text-sm text-[#AFC7B7]">
-            A clinical coordinator responds within 48 hours.
+            Our clinical coordinator will respond within 48 hours.
           </span>
         </div>
 

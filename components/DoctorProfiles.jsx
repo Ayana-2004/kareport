@@ -1,36 +1,31 @@
 import { AccreditationChip } from './AccreditationBadge';
 
-// Photos and details below are placeholders until the clinical team confirms
-// final bios — swap `photo`, `education`, `license`, `certifications` and
-// `experience` per doctor once real credentials are supplied.
+// Swap `photo` and `accreditations` per doctor once the clinical team
+// confirms hospital-network accreditations for each.
 const DOCTORS = [
   {
-    name: 'Dr. Hari Krishnan',
-    specialty: 'General & Laparoscopic Surgery',
-    title: 'Senior Consultant & Clinical Lead',
-    photo: '/hari.jpeg',
+    name: 'Dr K Harikrishnan',
+    specialty: 'Co-Founder',
+    title: 'Medical Officer, Kerala Health System',
+    photo: '/hari.jpg',
     blurb:
-      'Specialising in minimally invasive surgery, post-operative recovery coordination and patient-first care planning.',
-    education: 'MBBS, MD — Government Medical College, Kozhikode',
-    license: 'License No: KMC-24681',
-    certifications: 'Board Certified in General Surgery',
-    experience: '15+ Years of Experience',
+      'A practicing Medical Officer within the Kerala health system, bringing over four years of clinical experience and firsthand insider knowledge of the network to every KarePort case.',
+    education: 'MBBS — Kerala University of Health Sciences',
+    experience: '4+ Years of Experience',
     accreditations: ['NABH', 'JCI'],
-    linkedin: null,
+    linkedin: 'https://www.linkedin.com/in/dr-hari-k-40b4b8376',
   },
   {
-    name: 'Dr. Arif Rahman',
-    specialty: 'Cosmetic & Restorative Dentistry',
-    title: 'Consultant, Dental & Oral Care',
-    photo: '/arif.jpeg',
+    name: 'Dr Arif Nazar',
+    specialty: 'Co-Founder',
+    title: 'Medical Officer, Kerala Health System',
+    photo: '/arif.jpg',
     blurb:
-      'Focused on advanced restorative dentistry, painless procedures and full-mouth rehabilitation for international patients.',
-    education: 'BDS, MDS — Kerala University of Health Sciences',
-    license: 'License No: KDC-15329',
-    certifications: 'Certified in Cosmetic & Restorative Dentistry',
-    experience: '10+ Years of Experience',
+      'A practicing Medical Officer within the Kerala health system, bringing over four years of clinical experience and firsthand insider knowledge of the network to every KarePort case.',
+    education: 'MBBS — Kerala University of Health Sciences',
+    experience: '4+ Years of Experience',
     accreditations: ['NABH', 'OHSP'],
-    linkedin: null,
+    linkedin: 'https://in.linkedin.com/in/arif-nazar-160484189',
   },
 ];
 
@@ -53,8 +48,22 @@ export default function DoctorProfiles() {
         <h2 className="mt-4 max-w-[24ch] font-display text-3xl font-semibold sm:text-4xl">
           Doctor profiles
         </h2>
-        <p className="mt-3 max-w-[60ch] text-[#3B4A3F]">
-          The doctor-led panel guiding every KarePort case, from first enquiry to recovery.
+        <p className="mt-3 max-w-[70ch] text-[#3B4A3F]">
+          Welcome to a premier healthcare sanctuary where clinical excellence, patient safety,
+          and seamless care converge. Founded by Dr. Hari and Dr. Arif, our distinguished
+          medical facilitation firm serves as a trusted bridge connecting international
+          patients with world-class healthcare.
+        </p>
+        <p className="mt-3 max-w-[70ch] text-[#3B4A3F]">
+          As proud alumni of prestigious medical institutions under the revered Kerala
+          University of Health Sciences (KUHS), our founders possess an intimate, profound
+          understanding of the region&apos;s medical landscape. Bringing over four years of
+          dedicated experience and currently serving as active Medical Officers within the
+          Kerala health system, they command an unparalleled insider knowledge of the network.
+          When you entrust us with your health, you are not merely engaging a concierge
+          service; you are placing your journey in the care of practicing medical
+          professionals uniquely equipped to navigate the medical landscape and safeguard
+          your well-being.
         </p>
 
         <div className="mt-11 grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -74,10 +83,19 @@ export default function DoctorProfiles() {
                 <p className="mt-0.5 text-sm font-medium text-teal">{d.title}</p>
                 <p className="mt-2 text-sm text-[#3B4A3F]">{d.blurb}</p>
 
+                {d.linkedin && (
+                  <a
+                    href={d.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wide text-teal hover:underline"
+                  >
+                    LinkedIn ↗
+                  </a>
+                )}
+
                 <div className="mt-4">
                   <DetailRow label="Education" value={d.education} />
-                  <DetailRow label="License" value={d.license} />
-                  <DetailRow label="Certified" value={d.certifications} />
                   <DetailRow label="Experience" value={d.experience} />
                 </div>
 
