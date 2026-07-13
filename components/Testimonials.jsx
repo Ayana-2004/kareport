@@ -142,7 +142,7 @@ export default function Testimonials({ testimonials = defaultTestimonials }) {
   return (
     <section
       id="testimonials"
-      className="mx-auto max-w-6xl px-6 py-20"
+      className="mx-auto max-w-6xl px-6 py-[104px]"
       aria-labelledby="testimonials-heading"
     >
       <div className="mb-12 text-center">

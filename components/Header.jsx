@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const NAV_LINKS = [
   { label: 'Home', href: '#' },
@@ -13,9 +13,21 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-ink/10 bg-paper/90 backdrop-blur">
+    <header
+      className={`sticky top-0 z-50 border-b border-ink/10 bg-paper/90 backdrop-blur transition-shadow duration-200 ${
+        scrolled ? 'shadow-[0_4px_16px_-4px_rgba(15,61,62,0.18)]' : ''
+      }`}
+    >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-2 font-display text-lg font-semibold">
           <img

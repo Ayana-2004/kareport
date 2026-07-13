@@ -51,7 +51,7 @@ function PinIcon() {
 
 export default function Certifications() {
   return (
-    <section className="bg-teal py-20 text-paper">
+    <section className="bg-teal py-[104px] text-paper">
       <div className="mx-auto max-w-6xl px-6">
         <div className="font-mono text-xs uppercase tracking-widest text-[#BFD8C8]">
           Hospital examples by accreditation

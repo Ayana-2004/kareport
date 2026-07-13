@@ -47,7 +47,7 @@ function DetailRow({ label, value }) {
 
 export default function DoctorProfiles() {
   return (
-    <section id="doctors" className="bg-paper py-20">
+    <section id="doctors" className="bg-paper py-[104px]">
       <div className="mx-auto max-w-6xl px-6">
         <div className="font-mono text-xs uppercase tracking-widest text-leaf">Meet the panel</div>
         <h2 className="mt-4 max-w-[24ch] font-display text-3xl font-semibold sm:text-4xl">
