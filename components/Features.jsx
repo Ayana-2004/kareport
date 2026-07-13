@@ -11,7 +11,7 @@ const FEATURES = [
 
 export default function Features() {
   return (
-    <section className="bg-paper-2 py-20">
+    <section id="services" className="bg-paper-2 py-20">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="max-w-[20ch] font-display text-3xl font-semibold sm:text-4xl">
           What KarePort takes care of

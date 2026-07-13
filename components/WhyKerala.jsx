@@ -1,6 +1,6 @@
 export default function WhyKerala() {
   return (
-    <section className="py-20">
+    <section id="about" className="py-20">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-14 px-6 md:grid-cols-2">
         <div>
           <div className="font-mono text-xs uppercase tracking-widest text-leaf">Why Kerala</div>
