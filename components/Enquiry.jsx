@@ -7,11 +7,11 @@ export default function Enquiry() {
         <div>
           <div className="font-mono text-xs uppercase tracking-widest text-leaf">Start here</div>
           <h2 className="mt-4 max-w-[16ch] font-display text-3xl font-semibold sm:text-4xl">
-            Tell us who you are — Dr. Hari&apos;s team takes it from there.
+            Tell us who you are — KarePort&apos;s team takes it from there.
           </h2>
           <p className="mt-4 max-w-[44ch] text-[#3B4A3F]">
             Leave your name, email and phone number below. You&apos;ll get a short
-            confirmation, then a direct WhatsApp line to Dr. Hari&apos;s care team to
+            confirmation, then a direct WhatsApp line to KarePort&apos;s care team to
             continue the conversation.
           </p>
           <div className="mt-7 grid gap-2 font-mono text-sm text-[#2A362D]">

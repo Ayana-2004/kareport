@@ -8,7 +8,7 @@
 
 import { useState } from 'react';
 
-const WHATSAPP_NUMBER = '919400028226'; // Dr. Hari's team — India country code + number
+const WHATSAPP_NUMBER = '919400028226'; // KarePort's team — India country code + number
 
 const TREATMENT_CATEGORIES = ['Ayurveda', 'Allopathy', 'Dentistry', 'Other'];
 
@@ -104,7 +104,7 @@ export default function EnquiryForm() {
           rel="noopener"
           className="mt-6 block rounded-sm bg-[#1E5E3A] py-4 text-center font-mono text-sm text-paper hover:bg-[#174A2E]"
         >
-          Continue to WhatsApp with Dr. Hari&apos;s team →
+          Continue to WhatsApp with KarePort&apos;s team →
         </a>
         <p className="mt-3 font-mono text-xs text-[#5B6B5F]">
           Opens WhatsApp with a message already filled in — just hit send.

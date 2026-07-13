@@ -4,8 +4,8 @@ export default function Hero() {
       {/* Signature route-line motif — pure SVG, animates once on load */}
       <svg
         viewBox="0 0 1120 480"
-        preserveAspectRatio="xMidYMid slice"
-        className="pointer-events-none absolute inset-0 h-full w-full opacity-50"
+        preserveAspectRatio="xMidYMid meet"
+        className="pointer-events-none absolute inset-0 hidden h-full w-full opacity-50 sm:block"
       >
         <path
           d="M 40 90 C 300 40, 600 260, 1040 380"

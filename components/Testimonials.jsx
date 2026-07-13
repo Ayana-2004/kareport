@@ -43,7 +43,7 @@ const defaultTestimonials = [
     location: 'Dubai, UAE',
     treatment: 'General Surgery',
     quote:
-      "From the first WhatsApp message to being discharged, Dr. Hari's team coordinated every appointment. I never once felt like I was navigating a foreign hospital alone.",
+      "From the first WhatsApp message to being discharged, KarePort's team coordinated every appointment. I never once felt like I was navigating a foreign hospital alone.",
     rating: 5,
   },
   {
