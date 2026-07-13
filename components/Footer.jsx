@@ -11,12 +11,28 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="mb-3 font-mono text-xs uppercase tracking-widest text-[#D8B87A]">Contact</h4>
-            <div className="mb-2 text-sm">kareporthealth@gmail.com</div>
-            <div className="text-sm">WhatsApp +91 94000 28226</div>
+            <a href="mailto:kareporthealth@gmail.com" className="mb-2 block text-sm no-underline hover:text-paper">
+              kareporthealth@gmail.com
+            </a>
+            <a
+              href="https://wa.me/919400028226"
+              target="_blank"
+              rel="noopener"
+              className="block text-sm no-underline hover:text-paper"
+            >
+              WhatsApp +91 94000 28226
+            </a>
           </div>
           <div>
             <h4 className="mb-3 font-mono text-xs uppercase tracking-widest text-[#D8B87A]">Elsewhere</h4>
-            <div className="mb-2 text-sm">kareporthealth.com</div>
+            <a
+              href="https://kareporthealth.com"
+              target="_blank"
+              rel="noopener"
+              className="mb-2 block text-sm no-underline hover:text-paper"
+            >
+              kareporthealth.com
+            </a>
             <a
               href="https://www.instagram.com/kareport_health?utm_source=qr&igsh=aXlqa3JiOTN3Z3o5"
               target="_blank"

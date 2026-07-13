@@ -30,7 +30,7 @@ const accreditations = [
     code: "AYUSH",
     name: "AYUSH Certification",
     blurb:
-      "Recognises Ayurveda and Panchakarma centres that meet India's recognised traditional medicine care standards.",
+      "India's official recognition for authentic Ayurveda care, covering centres classified under the Ayur Diamond, Ayur Gold, and Ayur Silver quality tiers.",
   },
   {
     code: "OHSP",

@@ -15,9 +15,25 @@ export default function Enquiry() {
             continue the conversation.
           </p>
           <div className="mt-7 grid gap-2 font-mono text-sm text-[#2A362D]">
-            <div>kareporthealth.com</div>
-            <div>kareporthealth@gmail.com</div>
-            <div>WhatsApp +91 94000 28226</div>
+            <a
+              href="https://kareporthealth.com"
+              target="_blank"
+              rel="noopener"
+              className="no-underline hover:text-teal"
+            >
+              kareporthealth.com
+            </a>
+            <a href="mailto:kareporthealth@gmail.com" className="no-underline hover:text-teal">
+              kareporthealth@gmail.com
+            </a>
+            <a
+              href="https://wa.me/919400028226"
+              target="_blank"
+              rel="noopener"
+              className="no-underline hover:text-teal"
+            >
+              WhatsApp +91 94000 28226
+            </a>
             <a
               href="https://www.instagram.com/kareport_health?utm_source=qr&igsh=aXlqa3JiOTN3Z3o5"
               target="_blank"

@@ -68,19 +68,18 @@ export async function POST(request) {
         resend.emails.send({
           from: fromAddress,
           to: doctorEmail,
-          subject: `New enquiry — ${fullName} (${treatmentCategory})`,
-          html: `<h2>New KarePort enquiry</h2>${detailsHtml}`,
+          subject: 'New KarePort Enquiry',
+          html: `<h2>New KarePort Enquiry</h2>${detailsHtml}`,
         }),
         resend.emails.send({
           from: fromAddress,
           to: email,
-          subject: "We've received your enquiry — KarePort",
+          subject: 'We have received your enquiry',
           html: `
-            <p>Hi ${escapeHtml(fullName.split(' ')[0])},</p>
-            <p>Your enquiry has been received by the KarePort clinical desk. A dedicated
-            coordinator will review your details and contact you within 48 hours.</p>
-            ${detailsHtml}
-            <p>— Team KarePort</p>
+            <p>Thank you for contacting KarePort.</p>
+            <p>Our clinical coordination team has received your enquiry and will review the
+            details shortly. A coordinator will contact you within 48 hours.</p>
+            <p>Regards,<br />KarePort Team</p>
           `,
         }),
       ]);

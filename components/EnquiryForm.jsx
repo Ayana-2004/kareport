@@ -53,15 +53,28 @@ export default function EnquiryForm() {
     if (!nameOk || !emailOk || !phoneOk || !treatmentCategoryOk) return;
 
     const message =
-      `Hi Welfare Team at KarePort, I am exploring medical, dental, and Ayurveda integrated packages in Kerala. ` +
-      `I would like to speak to a coordinator regarding my concern.\n\n` +
-      `Name: ${values.fullName}\nEmail: ${values.email}\nPhone: ${values.phone}\n` +
-      `Treatment category: ${values.treatmentCategory}` +
-      (values.comments.trim() ? `\nAdditional notes: ${values.comments.trim()}` : '');
+      `Hello KarePort Team,\n\n` +
+      `I have submitted an enquiry through the website.\n\n` +
+      `Name: ${values.fullName}\n` +
+      `Email: ${values.email}\n` +
+      `Phone: ${values.phone}\n` +
+      `Treatment Category: ${values.treatmentCategory}\n\n` +
+      `Additional Requirements:\n${values.comments.trim() || 'None'}\n\n` +
+      `Please contact me regarding my treatment enquiry.\n\n` +
+      `Thank you.`;
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
-    // Best-effort: automated email + WhatsApp acknowledgment run server-side.
-    // The client always sees the confirmation screen and the manual WhatsApp
-    // fallback below, whether or not those integrations are configured yet.
+    // Open WhatsApp synchronously, still inside the click's user-activation
+    // window — awaiting the fetch below first would let some browsers
+    // (Safari/iOS in particular) treat the later window.open as a blocked
+    // popup instead of a user-initiated one.
+    window.open(waUrl, '_blank', 'noopener');
+    setWhatsappHref(waUrl);
+    setSubmitted(true);
+
+    // Best-effort: admin + user confirmation emails run server-side. The
+    // client has already moved on to the confirmation screen and WhatsApp
+    // above, whether or not this succeeds.
     try {
       await fetch('/api/enquiry', {
         method: 'POST',
@@ -71,9 +84,6 @@ export default function EnquiryForm() {
     } catch (err) {
       console.error('Enquiry notification request failed:', err);
     }
-
-    setWhatsappHref(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`);
-    setSubmitted(true);
   }
 
   const inputClass = (hasError) =>
@@ -107,7 +117,8 @@ export default function EnquiryForm() {
           Continue to WhatsApp with KarePort&apos;s team →
         </a>
         <p className="mt-3 font-mono text-xs text-[#5B6B5F]">
-          Opens WhatsApp with a message already filled in — just hit send.
+          WhatsApp should have opened automatically in a new tab with your details filled in —
+          if it didn&apos;t, use the button above.
         </p>
       </div>
     );
