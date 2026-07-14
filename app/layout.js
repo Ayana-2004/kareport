@@ -23,9 +23,9 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  title: 'KarePort — The Gateway of Kerala',
+  title: "KarePort — Gateway to Kerala's World-Class Healthcare",
   description:
-    "Bridging borders to Kerala's finest healthcare — surgery, dentistry and Ayurveda, curated by a doctor-led panel.",
+    "KarePort matches you with the right hospital and specialist in Kerala for advanced surgery, modern dentistry, and Ayurveda — under doctor-led clinical guidance.",
 };
 
 export default function RootLayout({ children }) {

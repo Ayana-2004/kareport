@@ -10,11 +10,11 @@ export default function WhyKerala() {
         </div>
         <div>
           <p className="max-w-[52ch] text-[#3B4A3F]">
-            Kerala&apos;s health system is recognised internationally as a model of high-quality,
-            comprehensive care — delivering advanced, high-result treatment at significantly
-            lower cost than most destinations. KarePort is the gateway into it: a single,
-            guided path to surgery, dentistry and Ayurveda, operated and supervised by a
-            professional team of doctors from Kerala itself.
+            Kerala&apos;s healthcare system is internationally recognised for delivering
+            high-quality, comprehensive care—offering advanced treatments at significantly
+            lower costs than many other destinations. KarePort is your gateway to this
+            trusted healthcare ecosystem, providing a single, guided pathway to surgery,
+            dentistry and Ayurveda, overseen by an experienced Kerala-based team of doctors.
           </p>
           <ul className="mt-5 grid gap-5">
             <li className="border-t border-ink/10 pt-4 text-sm text-[#2A362D]">

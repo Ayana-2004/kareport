@@ -66,15 +66,19 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 pb-24 pt-28 sm:pb-28 sm:pt-32">
         <div className="font-mono text-xs uppercase tracking-widest text-[#BFD8C8]">
-          KarePort — The Gateway of Kerala
+          KarePort — Gateway to Kerala&apos;s World-Class Healthcare
         </div>
-        <h1 className="mt-7 max-w-[14ch] font-display text-4xl font-semibold leading-tight text-[#FBF7ED] sm:text-6xl">
-          Bridging borders to Kerala&apos;s finest healthcare.
+        <h1 className="mt-7 max-w-[20ch] font-display text-4xl font-semibold leading-tight text-[#FBF7ED] sm:text-6xl">
+          Are you getting the care you actually need?
         </h1>
         <p className="mt-7 max-w-[52ch] text-lg text-[#D8E6DC]">
-          KarePort connects you to world-class surgery, advanced dentistry and serene
-          Ayurvedic recovery in Kerala — every step curated by a doctor-led panel, from
-          your first enquiry to the day you go home well.
+          Or just the treatment you were given? We help ensure you&apos;re matched with
+          the right hospital, the right specialist, and the right treatment plan for
+          better outcomes.
+        </p>
+        <p className="mt-4 max-w-[52ch] text-lg text-[#D8E6DC]">
+          KarePort connects you to world-class healthcare, including advanced surgery,
+          modern dentistry, and integrated Ayurvedic recovery programs.
         </p>
         <div className="mt-12 flex flex-wrap items-center gap-6">
           <a

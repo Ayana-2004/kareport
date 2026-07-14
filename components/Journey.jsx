@@ -2,7 +2,7 @@ const STEPS = [
   { n: '01', title: 'You reach out', body: 'Share your name, age, sex, contact details, and any available medical records.' },
   { n: '02', title: 'A coordinator reviews your case', body: 'Within 48 hours, a dedicated clinical coordinator reviews your medical records and contacts you directly.' },
   { n: '03', title: 'Hospital & treatment matched', body: 'You\u2019re matched with the hospital and specialist best suited to your condition and treatment needs.' },
-  { n: '04', title: 'Travel & stay arranged', body: 'Your visit is planned pick-up to drop-off, supervised throughout by the doctors\u2019 panel.' },
+  { n: '04', title: 'Travel and stay coordinated', body: 'Your entire journey\u2014from airport pickup to your return\u2014is planned and coordinated by our doctors\u2019 panel.' },
   { n: '05', title: 'Recovery, diet & follow-up', body: 'Care continues after treatment, with a diet and follow-up plan curated for you.' },
 ];
 

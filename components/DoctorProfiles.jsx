@@ -95,28 +95,58 @@ export default function DoctorProfiles() {
         </div>
 
 
-        <p className="mt-11 text-[#3B4A3F]">
-          Welcome to a premier healthcare sanctuary where clinical excellence, patient safety,
-          and seamless care converge. Founded by Dr. Hari and Dr. Arif, our distinguished
-          medical facilitation firm serves as a trusted bridge connecting international
-          patients with world-class healthcare.
-        </p>
-        <p className="mt-3 text-[#3B4A3F]">
-          As proud alumni of prestigious medical institutions under the revered Kerala
-          University of Health Sciences (KUHS), our founders possess an intimate, profound
-          understanding of the region&apos;s medical landscape. They currently serve as active
-          Medical Officers within the Kerala health system, giving them unparalleled insider
-          knowledge of the network. When you entrust us with your health, you are not merely
-          engaging a concierge service; you are placing your journey in the care of practicing
-          medical professionals uniquely equipped to navigate the medical landscape and
-          safeguard your well-being.
-        </p>
+        <div className="mt-11 grid grid-cols-1 gap-10 md:grid-cols-2">
+          <div>
+            <p className="text-[#3B4A3F]">
+              &ldquo;Patient-centric care is at the heart of everything we do. Having served
+              within the healthcare system, I understand the critical importance of
+              transparency, rigorous quality standards, and genuine empathy in medicine.
+            </p>
+            <p className="mt-3 text-[#3B4A3F]">
+              Our mission is to bridge the gap between world-class medical specialists and
+              global patients seeking top-tier treatment. We meticulously vet every hospital
+              and specialist on our panel, ensuring that you receive the exact level of
+              clinical excellence and safety you deserve.
+            </p>
+            <p className="mt-3 text-[#3B4A3F]">
+              Your well-being is, and always will be, our highest priority.&rdquo;
+            </p>
+            <p className="mt-4 font-display text-sm font-semibold text-teal">
+              — Dr. Arif Nazar, Co-Founder
+            </p>
+          </div>
+          <div>
+            <p className="text-[#3B4A3F]">
+              &ldquo;As a practicing physician, I have always believed that healthcare should
+              know no borders.
+            </p>
+            <p className="mt-3 text-[#3B4A3F]">
+              Navigating medical treatment in a foreign country can feel overwhelming, which
+              is why we founded this platform.
+            </p>
+            <p className="mt-3 text-[#3B4A3F]">
+              My commitment is to ensure that your medical journey is anchored in strict
+              clinical safety, world-class expertise, and seamless care.
+            </p>
+            <p className="mt-3 text-[#3B4A3F]">
+              When you trust us with your health, you aren&apos;t just hiring a travel
+              service—you are placing your care in the hands of doctors who understand the
+              medical landscape inside out.
+            </p>
+            <p className="mt-3 text-[#3B4A3F]">
+              We are here to guide you every single step of the way.&rdquo;
+            </p>
+            <p className="mt-4 font-display text-sm font-semibold text-teal">
+              — Dr. K Harikrishnan, Co-Founder
+            </p>
+          </div>
+        </div>
 
         <div className="mt-8 flex flex-wrap items-center justify-between gap-6 border border-ink/25 bg-teal px-7 py-6 text-paper">
           <div>
-            <div className="font-display text-lg font-semibold text-[#FBF7ED]">Need a consultation?</div>
+            <div className="font-display text-lg font-semibold text-[#FBF7ED]">Need expert medical advice?</div>
             <p className="mt-1 max-w-[44ch] text-sm text-[#D8E6DC]">
-              Consult with our specialists and take the first step towards better health.
+              Consult with our specialists and take the first step towards better health and recovery.
             </p>
           </div>
           <div className="flex flex-wrap gap-6 font-mono text-xs text-[#CBDDD2]">

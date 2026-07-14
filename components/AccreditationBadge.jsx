@@ -3,14 +3,12 @@ const LOGOS = {
   JCI: '/logo_jci.jpg',
   NABH: '/nabh-logo.png',
   AYUSH: '/Ayush.png',
-  OHSP: '/Oral.webp',
 };
 
 const RING_COLORS = {
   JCI: '#0F3D3E',
   NABH: '#C68A2E',
   AYUSH: '#4B7A5A',
-  OHSP: '#2E6B8A',
 };
 
 export function AccreditationBadge({ code, className = 'h-10 w-10' }) {

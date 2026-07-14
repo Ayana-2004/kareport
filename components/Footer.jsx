@@ -6,7 +6,7 @@ export default function Footer() {
           <div>
             <div className="font-display text-lg font-semibold text-[#FBF7ED]">KarePort</div>
             <p className="mt-2 max-w-[32ch] text-sm text-[#9FBBA9]">
-              The gateway of Kerala — surgery, dentistry and Ayurveda, curated by doctors.
+              Gateway to Kerala&apos;s advanced surgery, dentistry and Ayurveda, curated by doctors.
             </p>
           </div>
           <div>

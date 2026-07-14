@@ -32,12 +32,6 @@ const accreditations = [
     blurb:
       "India's official recognition for authentic Ayurveda care, covering centres classified under the Ayur Diamond, Ayur Gold, and Ayur Silver quality tiers.",
   },
-  {
-    code: "OHSP",
-    name: "Oral Health Standards Programme",
-    blurb:
-      "Recognises advanced dental care facilities that meet rigorous standards for hygiene, patient safety, and clinical excellence.",
-  },
 ];
 
 const CATEGORIES = [
