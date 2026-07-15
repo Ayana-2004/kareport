@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 const WHATSAPP_NUMBER = '919400028226'; // KarePort's team — India country code + number
 
-const TREATMENT_CATEGORIES = ['Ayurveda', 'Modern Medicine', 'Dentistry', 'Other'];
+const TREATMENT_CATEGORIES = ['Modern Medicine &  Advance surgery','Ayurveda', 'Dentistry', 'Other'];
 
 function isValidEmail(v) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
@@ -220,7 +220,7 @@ export default function EnquiryForm() {
         Send enquiry
       </button>
       <p className="mt-4 text-xs text-[#5B6B5F]">
-        Your details go directly to the KarePort clinical desk and are handled in confidence.
+        Your information goes directly to the KarePort clinical desk and managed under strict professional confidentiality.
       </p>
     </form>
   );

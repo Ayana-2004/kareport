@@ -22,7 +22,7 @@ export default function WhyKerala() {
                 One coordinator, one plan
               </strong>
               Your case is reviewed by our clinical team and matched to the right hospital
-              and specialist for your condition.
+              and specialist for your best interest.
             </li>
             <li className="border-t border-ink/10 pt-4 text-sm text-[#2A362D]">
               <strong className="mb-1 block font-display text-base font-semibold">

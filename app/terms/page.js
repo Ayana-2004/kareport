@@ -11,7 +11,7 @@ export default function Terms() {
   return (
     <main>
       <Header />
-      <LegalPageHeader title="Terms of Service" lastUpdated="10 July 2026" />
+      <LegalPageHeader title="Terms of Service" lastUpdated="15 July 2026" />
 
       <section className="bg-paper py-16">
         <div className="mx-auto max-w-3xl px-6">
@@ -54,6 +54,49 @@ export default function Terms() {
 
             <div className="border-t border-ink/10 pt-6">
               <div className="font-mono text-xs text-gold-2">04</div>
+              <h2 className="mt-2 font-display text-xl font-semibold">
+                Financial arrangements &amp; third-party fees
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-[#2A362D]">
+                KarePort provides brokerage, facilitation, and destination management consultancy
+                services. All fees for medical, dental, or Ayurvedic treatments, surgeries,
+                accommodations, and hospital stays are paid directly to the respective third-party
+                service providers. KarePort is not a party to any financial agreements between you
+                and the healthcare facilities and carries no liability for payment disputes,
+                refunds, or pricing adjustments.
+              </p>
+            </div>
+
+            <div className="border-t border-ink/10 pt-6">
+              <div className="font-mono text-xs text-gold-2">05</div>
+              <h2 className="mt-2 font-display text-xl font-semibold">
+                Travel, logistics, and complications disclaimer
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-[#2A362D]">
+                Travel for medical purposes carries inherent risks. KarePort is not responsible for
+                travel delays, visa complications, or flight cancellations that impact your
+                scheduled care. Furthermore, KarePort is not liable for post-treatment travel
+                complications, decisions regarding fitness-to-fly, or any emergency medical care
+                required during transit. We strongly recommend that all international clients
+                obtain comprehensive medical travel insurance.
+              </p>
+            </div>
+
+            <div className="border-t border-ink/10 pt-6">
+              <div className="font-mono text-xs text-gold-2">06</div>
+              <h2 className="mt-2 font-display text-xl font-semibold">
+                Data handling and cross-border transfer
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-[#2A362D]">
+                By submitting medical records, case histories, or diagnostic reports through our
+                platform, you explicitly consent to KarePort securely storing and transmitting this
+                data to accredited partner hospitals and specialists within Kerala, India, for the
+                purpose of evaluating your care coordination requests.
+              </p>
+            </div>
+
+            <div className="border-t border-ink/10 pt-6">
+              <div className="font-mono text-xs text-gold-2">07</div>
               <h2 className="mt-2 font-display text-xl font-semibold">Communications consent</h2>
               <p className="mt-2 text-sm leading-relaxed text-[#2A362D]">
                 By submitting the enquiry form, you consent to KarePort contacting you by email,
@@ -63,7 +106,7 @@ export default function Terms() {
             </div>
 
             <div className="border-t border-ink/10 pt-6">
-              <div className="font-mono text-xs text-gold-2">05</div>
+              <div className="font-mono text-xs text-gold-2">08</div>
               <h2 className="mt-2 font-display text-xl font-semibold">Accuracy of information</h2>
               <p className="mt-2 text-sm leading-relaxed text-[#2A362D]">
                 You agree to provide accurate and current information in the enquiry form. KarePort
@@ -73,7 +116,7 @@ export default function Terms() {
             </div>
 
             <div className="border-t border-ink/10 pt-6">
-              <div className="font-mono text-xs text-gold-2">06</div>
+              <div className="font-mono text-xs text-gold-2">09</div>
               <h2 className="mt-2 font-display text-xl font-semibold">Limitation of liability</h2>
               <p className="mt-2 text-sm leading-relaxed text-[#2A362D]">
                 To the fullest extent permitted by law, KarePort is not liable for any indirect,
@@ -84,7 +127,7 @@ export default function Terms() {
             </div>
 
             <div className="border-t border-ink/10 pt-6">
-              <div className="font-mono text-xs text-gold-2">07</div>
+              <div className="font-mono text-xs text-gold-2">10</div>
               <h2 className="mt-2 font-display text-xl font-semibold">Changes to these terms</h2>
               <p className="mt-2 text-sm leading-relaxed text-[#2A362D]">
                 We may update these terms from time to time. The &quot;Last updated&quot; date above
@@ -94,7 +137,7 @@ export default function Terms() {
             </div>
 
             <div className="border-t border-ink/10 pt-6">
-              <div className="font-mono text-xs text-gold-2">08</div>
+              <div className="font-mono text-xs text-gold-2">11</div>
               <h2 className="mt-2 font-display text-xl font-semibold">Governing law</h2>
               <p className="mt-2 text-sm leading-relaxed text-[#2A362D]">
                 These terms are governed by the laws of India, and any disputes are subject to the
@@ -103,7 +146,7 @@ export default function Terms() {
             </div>
 
             <div className="border-t border-ink/10 pt-6">
-              <div className="font-mono text-xs text-gold-2">09</div>
+              <div className="font-mono text-xs text-gold-2">12</div>
               <h2 className="mt-2 font-display text-xl font-semibold">Contact us</h2>
               <p className="mt-2 text-sm leading-relaxed text-[#2A362D]">
                 Questions about these terms can be sent to{' '}

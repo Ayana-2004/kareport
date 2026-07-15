@@ -10,8 +10,9 @@ const DOCTORS = [
     photo: '/hari.jpg',
     education: 'MBBS — Kerala University of Health Sciences',
     experience: '4+ Years of Experience',
-  
     linkedin: 'https://www.linkedin.com/in/dr-hari-k-40b4b8376',
+    quote:
+      'I believe healthcare should know no borders, which is why we ensure seamless, clinically safe medical travel. With us, you aren’t hiring a travel service—you are trusting medical experts to guide you.',
   },
   {
     name: 'Dr Arif Nazar',
@@ -21,6 +22,8 @@ const DOCTORS = [
     education: 'MBBS — Kerala University of Health Sciences',
     experience: '4+ Years of Experience',
     linkedin: 'https://in.linkedin.com/in/arif-nazar-160484189',
+    quote:
+      'Uncompromising care requires specialized expertise. We rigorously evaluate our hospital panel to know precisely which facility excels at which treatment, ensuring your health is always in the absolute best hands.',
   },
 ];
 
@@ -45,7 +48,7 @@ export default function DoctorProfiles() {
         </h2>
         <div className="mt-11 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {DOCTORS.map((d) => (
-            <div key={d.name} className="flex flex-col gap-5 border border-ink/25 bg-paper-2 p-7 sm:flex-row">
+            <div key={d.name} className="flex flex-col gap-6 border border-ink/25 bg-paper-2 p-9 sm:flex-row">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={d.photo}
@@ -83,6 +86,8 @@ export default function DoctorProfiles() {
                   </div>
                 )}
 
+                <p className="mt-4 font-display italic text-[#3B4A3F]">&quot;{d.quote}&quot;</p>
+
                 {/* <a
                   href="#enquiry"
                   className="mt-5 inline-flex items-center gap-2 border border-teal px-5 py-2.5 font-display text-sm font-semibold text-teal transition hover:bg-teal hover:text-paper"
@@ -94,53 +99,23 @@ export default function DoctorProfiles() {
           ))}
         </div>
 
-
-        <div className="mt-11 grid grid-cols-1 gap-10 md:grid-cols-2">
-          <div>
-            <p className="text-[#3B4A3F]">
-              &ldquo;Patient-centric care is at the heart of everything we do. Having served
-              within the healthcare system, I understand the critical importance of
-              transparency, rigorous quality standards, and genuine empathy in medicine.
-            </p>
-            <p className="mt-3 text-[#3B4A3F]">
-              Our mission is to bridge the gap between world-class medical specialists and
-              global patients seeking top-tier treatment. We meticulously vet every hospital
-              and specialist on our panel, ensuring that you receive the exact level of
-              clinical excellence and safety you deserve.
-            </p>
-            <p className="mt-3 text-[#3B4A3F]">
-              Your well-being is, and always will be, our highest priority.&rdquo;
-            </p>
-            <p className="mt-4 font-display text-sm font-semibold text-teal">
-              — Dr. Arif Nazar, Co-Founder
-            </p>
-          </div>
-          <div>
-            <p className="text-[#3B4A3F]">
-              &ldquo;As a practicing physician, I have always believed that healthcare should
-              know no borders.
-            </p>
-            <p className="mt-3 text-[#3B4A3F]">
-              Navigating medical treatment in a foreign country can feel overwhelming, which
-              is why we founded this platform.
-            </p>
-            <p className="mt-3 text-[#3B4A3F]">
-              My commitment is to ensure that your medical journey is anchored in strict
-              clinical safety, world-class expertise, and seamless care.
-            </p>
-            <p className="mt-3 text-[#3B4A3F]">
-              When you trust us with your health, you aren&apos;t just hiring a travel
-              service—you are placing your care in the hands of doctors who understand the
-              medical landscape inside out.
-            </p>
-            <p className="mt-3 text-[#3B4A3F]">
-              We are here to guide you every single step of the way.&rdquo;
-            </p>
-            <p className="mt-4 font-display text-sm font-semibold text-teal">
-              — Dr. K Harikrishnan, Co-Founder
-            </p>
-          </div>
-        </div>
+        <p className="mt-11 text-[#3B4A3F]">
+          Welcome to a premier healthcare sanctuary where clinical excellence, patient safety,
+          and seamless care converge. Founded by Dr. Hari and Dr. Arif, our distinguished
+          medical facilitation firm serves as a trusted bridge connecting international
+          patients with world-class healthcare.
+        </p>
+        <p className="mt-3 text-[#3B4A3F]">
+          As proud alumni of prestigious medical institutions under the revered Kerala
+          University of Health Sciences (KUHS), our founders possess an intimate, profound
+          understanding of the region&apos;s medical landscape. Bringing over four years of
+          dedicated experience and currently serving as active Medical Officers within the
+          Kerala health system, they command an unparalleled insider knowledge of the network.
+          When you entrust us with your health, you are not merely engaging a concierge
+          service; you are placing your journey in the care of practicing medical
+          professionals uniquely equipped to navigate the medical landscape and safeguard
+          your well-being.
+        </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-between gap-6 border border-ink/25 bg-teal px-7 py-6 text-paper">
           <div>
@@ -158,7 +133,7 @@ export default function DoctorProfiles() {
             href="#enquiry"
             className="rounded-sm border border-gold bg-gold px-6 py-3 font-display text-sm font-semibold text-[#1B1305] transition hover:bg-gold-2"
           >
-            Start your enquiry
+            Start your Journey
           </a>
         </div>
       </div>

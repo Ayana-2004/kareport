@@ -70,7 +70,9 @@ export default function Accreditations() {
         {accreditations.map((a) => (
           <div
             key={a.code}
-            className="flex gap-5 rounded-2xl bg-white p-7 shadow-[0_10px_30px_-12px_rgba(7,59,76,0.15)] ring-1 ring-black/5"
+            className={`flex gap-5 rounded-2xl bg-white p-7 shadow-[0_10px_30px_-12px_rgba(7,59,76,0.15)] ring-1 ring-black/5 ${
+              a.code === 'AYUSH' ? 'sm:col-span-2 sm:mx-auto sm:w-[calc(50%-0.75rem)]' : ''
+            }`}
           >
             <div className="shrink-0">
               <AccreditationBadge code={a.code} />

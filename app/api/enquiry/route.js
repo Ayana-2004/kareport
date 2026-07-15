@@ -68,8 +68,14 @@ export async function POST(request) {
         resend.emails.send({
           from: fromAddress,
           to: doctorEmail,
-          subject: 'New KarePort Enquiry',
-          html: `<h2>New KarePort Enquiry</h2>${detailsHtml}`,
+          // Includes the enquirer's name so each enquiry gets a distinct subject —
+          // an identical subject on every send makes Gmail thread them all into
+          // a single conversation instead of separate messages.
+          subject: `New KarePort Enquiry — ${fullName}`,
+          html: `
+            <p>You have a new enquiry from the KarePort website:</p>
+            ${detailsHtml}
+          `,
         }),
         resend.emails.send({
           from: fromAddress,

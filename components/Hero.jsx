@@ -70,22 +70,21 @@ export default function Hero() {
         </div>
         <h1 className="mt-7 max-w-[20ch] font-display text-4xl font-semibold leading-tight text-[#FBF7ED] sm:text-6xl">
           Are you getting the care you actually need?
+          Or just the treatment you were given?
         </h1>
         <p className="mt-7 max-w-[52ch] text-lg text-[#D8E6DC]">
-          Or just the treatment you were given? We help ensure you&apos;re matched with
-          the right hospital, the right specialist, and the right treatment plan for
-          better outcomes.
+          KarePort connects you with world-class surgical care, advanced dentistry, and authentic Ayurvedic recovery in Kerala. Every step curated by a doctor-led panel, from your first enquiry to the day you go home well.
         </p>
-        <p className="mt-4 max-w-[52ch] text-lg text-[#D8E6DC]">
+        {/* <p className="mt-4 max-w-[52ch] text-lg text-[#D8E6DC]">
           KarePort connects you to world-class healthcare, including advanced surgery,
           modern dentistry, and integrated Ayurvedic recovery programs.
-        </p>
+        </p> */}
         <div className="mt-12 flex flex-wrap items-center gap-6">
           <a
             href="#enquiry"
             className="rounded-sm border border-gold bg-gold px-9 py-5 font-display text-lg font-semibold text-[#1B1305] shadow-[0_12px_32px_-8px_rgba(234,203,134,0.55)] transition hover:-translate-y-0.5 hover:bg-gold-2 hover:shadow-[0_16px_40px_-8px_rgba(234,203,134,0.65)]"
           >
-            Start Your Enquiry →
+            Start Your Journey →
           </a>
           <span className="text-sm text-[#AFC7B7]">
             Our clinical coordinator will respond within 48 hours.
