@@ -5,7 +5,7 @@ import { Resend } from 'resend';
 // succeeds — the form always completes for the client, automation kicks in
 // once real Resend / Meta WhatsApp Cloud API credentials are supplied.
 
-const TREATMENT_CATEGORIES = ['Ayurveda', 'Modern Medicine', 'Dentistry', 'Other'];
+const TREATMENT_CATEGORIES = ['Modern Medicine &  Advance surgery', 'Ayurveda', 'Dentistry', 'Other'];
 
 function isValidEmail(v) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
