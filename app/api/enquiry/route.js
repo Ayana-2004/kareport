@@ -48,13 +48,14 @@ export async function POST(request) {
   const result = { ok: true, emailSent: false, whatsappSent: false };
 
   // --- Email (Resend): confirmation to client + alert to doctor/desk ---
-  // Until a verified sending domain is configured, RESEND_FROM_EMAIL falls
-  // back to Resend's shared sandbox address.
+  // kareport.com is verified on Resend, so RESEND_FROM_EMAIL should be an
+  // address on that domain (e.g. info@kareport.com) — delivery then works
+  // to any recipient, not just the Resend account's own email.
   if (process.env.RESEND_API_KEY) {
     try {
       const resend = new Resend(process.env.RESEND_API_KEY);
-      const fromAddress = process.env.RESEND_FROM_EMAIL || 'KarePort Enquiries <onboarding@resend.dev>';
-      const doctorEmail = process.env.DOCTOR_NOTIFY_EMAIL || 'kareporthealth@gmail.com';
+      const fromAddress = process.env.RESEND_FROM_EMAIL || 'KarePort <info@kareport.com>';
+      const doctorEmail = process.env.DOCTOR_NOTIFY_EMAIL || 'info@kareport.com';
 
       const detailsHtml = `
         <p><strong>Name:</strong> ${escapeHtml(fullName)}</p>

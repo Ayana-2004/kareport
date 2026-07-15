@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 const WHATSAPP_NUMBER = '919400028226'; // KarePort's team — India country code + number
 
-const TREATMENT_CATEGORIES = ['modern medicine and advanced surgery', 'Ayurveda', 'Dentistry', 'Other'];
+const TREATMENT_CATEGORIES = ['Modern medicine and advanced surgery', 'Ayurveda', 'Dentistry', 'Other'];
 
 function isValidEmail(v) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
