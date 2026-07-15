@@ -3,12 +3,12 @@
 import { useEffect, useState } from 'react';
 
 const NAV_LINKS = [
-  { label: 'Home', href: '#' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Doctors', href: '#doctors' },
-  // { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Contact', href: '#enquiry' },
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/#about' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Doctors', href: '/#doctors' },
+  // { label: 'Testimonials', href: '/#testimonials' },
+  { label: 'Contact', href: '/#enquiry' },
 ];
 
 export default function Header() {
@@ -52,7 +52,7 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#enquiry"
+            href="/#enquiry"
             className="hidden rounded-sm bg-teal px-5 py-2.5 font-display text-sm font-semibold tracking-wide text-paper hover:bg-teal-2 sm:inline-block"
           >
             Enquiry
@@ -88,7 +88,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#enquiry"
+            href="/#enquiry"
             onClick={() => setOpen(false)}
             className="mt-2 rounded-sm bg-teal px-5 py-2.5 text-center font-display text-sm font-semibold tracking-wide text-paper hover:bg-teal-2 sm:hidden"
           >
