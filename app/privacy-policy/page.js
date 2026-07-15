@@ -118,10 +118,10 @@ export default function PrivacyPolicy() {
               <h2 className="mt-2 font-display text-xl font-semibold">Contact us</h2>
               <p className="mt-2 text-sm leading-relaxed text-[#2A362D]">
                 Questions about this policy or your information can be sent to{' '}
-                <a href="mailto:kareporthealth@gmail.com" className="text-teal underline hover:text-teal-2">
-                  kareporthealth@gmail.com
+                <a href="mailto:info@kareport.com" className="text-teal underline hover:text-teal-2">
+                  info@kareport.com
                 </a>{' '}
-                or via WhatsApp at +91 94000 28226.
+                {/* or via WhatsApp at +91 94000 28226. */}
               </p>
             </div>
           </div>
