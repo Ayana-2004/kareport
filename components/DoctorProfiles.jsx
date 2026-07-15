@@ -12,7 +12,7 @@ const DOCTORS = [
     experience: '4+ Years of Experience',
     linkedin: 'https://www.linkedin.com/in/dr-hari-k-40b4b8376',
     quote:
-      'I believe healthcare should know no borders, which is why we ensure seamless, clinically safe medical travel. With us, you aren’t hiring a travel service—you are trusting medical experts to guide you.',
+      'True clinical excellence is defined by expertise, precision, and uncompromising integrity. We are committed to evidence-based care, ethical decision-making, and compassionate leadership, ensuring every patient receives the highest standard of care from the most qualified experts.',
   },
   {
     name: 'Dr Arif Nazar',
@@ -44,7 +44,7 @@ export default function DoctorProfiles() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="font-mono text-xs uppercase tracking-widest text-leaf">Meet the panel</div>
         <h2 className="mt-4 max-w-[24ch] font-display text-3xl font-semibold sm:text-4xl">
-          Doctor profiles
+          From the Founders
         </h2>
         <div className="mt-11 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {DOCTORS.map((d) => (

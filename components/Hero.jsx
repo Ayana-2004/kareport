@@ -73,7 +73,7 @@ export default function Hero() {
           Or just the treatment you were given?
         </h1>
         <p className="mt-7 max-w-[52ch] text-lg text-[#D8E6DC]">
-          KarePort connects you with world-class surgical care, advanced dentistry, and authentic Ayurvedic recovery in Kerala. Every step curated by a doctor-led panel, from your first enquiry to the day you go home well.
+          KarePort connects you with world-class medical and surgical care, advanced dentistry, and authentic Ayurvedic recovery in Kerala. Every step curated by a doctor-led panel, from your first enquiry to the day you go home well.
         </p>
         {/* <p className="mt-4 max-w-[52ch] text-lg text-[#D8E6DC]">
           KarePort connects you to world-class healthcare, including advanced surgery,

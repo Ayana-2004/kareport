@@ -13,8 +13,9 @@ export default function WhyKerala() {
             Kerala&apos;s healthcare system is internationally recognised for delivering
             high-quality, comprehensive care—offering advanced treatments at significantly
             lower costs than many other destinations. KarePort is your gateway to this
-            trusted healthcare ecosystem, providing a single, guided pathway to surgery,
-            dentistry and Ayurveda, overseen by an experienced Kerala-based team of doctors.
+            trusted healthcare ecosystem, providing a single, guided pathway to modern
+            medicine and advanced surgery, dentistry and Ayurveda, overseen by an
+            experienced Kerala-based team of doctors.
           </p>
           <ul className="mt-5 grid gap-5">
             <li className="border-t border-ink/10 pt-4 text-sm text-[#2A362D]">
