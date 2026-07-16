@@ -23,9 +23,25 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://kareport.com'),
   title: "KarePort — Gateway to Kerala's World-Class Healthcare",
   description:
     "KarePort matches you with the right hospital and specialist in Kerala for advanced surgery, modern dentistry, and Ayurveda — under doctor-led clinical guidance.",
+  openGraph: {
+    title: "KarePort — Gateway to Kerala's World-Class Healthcare",
+    description:
+      "KarePort matches you with the right hospital and specialist in Kerala for advanced surgery, modern dentistry, and Ayurveda — under doctor-led clinical guidance.",
+    url: 'https://kareport.com',
+    siteName: 'KarePort',
+    images: [{ url: '/kareport-navbar-logo.png', width: 860, height: 860 }],
+  },
+  twitter: {
+    card: 'summary',
+    title: "KarePort — Gateway to Kerala's World-Class Healthcare",
+    description:
+      "KarePort matches you with the right hospital and specialist in Kerala for advanced surgery, modern dentistry, and Ayurveda — under doctor-led clinical guidance.",
+    images: ['/kareport-navbar-logo.png'],
+  },
 };
 
 export default function RootLayout({ children }) {
