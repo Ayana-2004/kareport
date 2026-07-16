@@ -16,15 +16,15 @@ export default function Enquiry() {
           </p>
           <div className="mt-7 grid gap-2 font-mono text-sm text-[#2A362D]">
             <a
-              href="https://kareporthealth.com"
+              href="https://kareport.com"
               target="_blank"
               rel="noopener"
               className="no-underline hover:text-teal"
             >
-              kareporthealth.com
+              kareport.com
             </a>
-            <a href="mailto:kareporthealth@gmail.com" className="no-underline hover:text-teal">
-              kareporthealth@gmail.com
+            <a href="mailto:info@kareport.com" className="no-underline hover:text-teal">
+              info@kareport.com
             </a>
             <a
               href="https://wa.me/919400028226"

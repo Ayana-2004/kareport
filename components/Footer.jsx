@@ -11,8 +11,8 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="mb-3 font-mono text-xs uppercase tracking-widest text-[#D8B87A]">Contact</h4>
-            <a href="mailto:kareporthealth@gmail.com" className="mb-2 block text-sm no-underline hover:text-paper">
-              kareporthealth@gmail.com
+            <a href="mailto:info@kareport.com" className="mb-2 block text-sm no-underline hover:text-paper">
+              info@kareport.com
             </a>
             <a
               href="https://wa.me/919400028226"
@@ -26,12 +26,12 @@ export default function Footer() {
           <div>
             <h4 className="mb-3 font-mono text-xs uppercase tracking-widest text-[#D8B87A]">Elsewhere</h4>
             <a
-              href="https://kareporthealth.com"
+              href="https://kareport.com"
               target="_blank"
               rel="noopener"
               className="mb-2 block text-sm no-underline hover:text-paper"
             >
-              kareporthealth.com
+              kareport.com
             </a>
             <a
               href="https://www.instagram.com/kareport_health?utm_source=qr&igsh=aXlqa3JiOTN3Z3o5"
