@@ -57,6 +57,15 @@ export async function POST(request) {
       const fromAddress = process.env.RESEND_FROM_EMAIL || 'KarePort <info@kareport.com>';
       const doctorEmail = process.env.DOCTOR_NOTIFY_EMAIL || 'info@kareport.com';
 
+      // Absolute URL required: email clients load images from the public
+      // internet, not the Next.js app, so a relative /kareport-navbar-logo.png
+      // path (as used in app/layout.js metadata) won't resolve here.
+      const logoHtml = `
+        <p style="margin: 0 0 16px;">
+          <img src="https://kareport.com/kareport-navbar-logo.png" alt="KarePort" width="120" style="display: block; border: 0;" />
+        </p>
+      `;
+
       const detailsHtml = `
         <p><strong>Name:</strong> ${escapeHtml(fullName)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
@@ -74,6 +83,7 @@ export async function POST(request) {
           // a single conversation instead of separate messages.
           subject: `New KarePort Enquiry — ${fullName}`,
           html: `
+            ${logoHtml}
             <p>You have a new enquiry from the KarePort website:</p>
             ${detailsHtml}
           `,
@@ -83,6 +93,7 @@ export async function POST(request) {
           to: email,
           subject: 'We have received your enquiry',
           html: `
+            ${logoHtml}
             <p>Thank you for contacting KarePort.</p>
             <p>Our clinical coordination team has received your enquiry and will review the
             details shortly. A coordinator will contact you within 48 hours.</p>
