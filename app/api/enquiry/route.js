@@ -60,9 +60,13 @@ export async function POST(request) {
       // Absolute URL required: email clients load images from the public
       // internet, not the Next.js app, so a relative /kareport-navbar-logo.png
       // path (as used in app/layout.js metadata) won't resolve here.
+      // The source PNG is a flat (non-transparent) square with the circular
+      // badge centered on a white background, so it's clipped to a circle
+      // and sized small here — same treatment as the site header (Header.jsx),
+      // which uses rounded-full at h-14 (56px) for the same source image.
       const logoHtml = `
-        <p style="margin: 0 0 16px;">
-          <img src="https://kareport.com/kareport-navbar-logo.png" alt="KarePort" width="120" style="display: block; border: 0;" />
+        <p style="margin: 0 0 20px;">
+          <img src="https://kareport.com/kareport-navbar-logo.png" alt="KarePort" width="56" height="56" style="display: block; border: 0; border-radius: 50%;" />
         </p>
       `;
 
