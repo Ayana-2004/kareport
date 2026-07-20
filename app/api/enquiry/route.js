@@ -62,11 +62,12 @@ export async function POST(request) {
       // path (as used in app/layout.js metadata) won't resolve here.
       // The source PNG is a flat (non-transparent) square with the circular
       // badge centered on a white background, so it's clipped to a circle
-      // and sized small here — same treatment as the site header (Header.jsx),
-      // which uses rounded-full at h-14 (56px) for the same source image.
+      // via border-radius, same treatment as the site header (Header.jsx,
+      // rounded-full) for the same source image — sized down further here
+      // to sit as a small signature mark rather than a header-sized logo.
       const logoHtml = `
-        <p style="margin: 0 0 20px;">
-          <img src="https://kareport.com/kareport-navbar-logo.png" alt="KarePort" width="56" height="56" style="display: block; border: 0; border-radius: 50%;" />
+        <p style="margin: 20px 0 0;">
+          <img src="https://kareport.com/kareport-navbar-logo.png" alt="KarePort" width="36" height="36" style="display: block; border: 0; border-radius: 50%;" />
         </p>
       `;
 
@@ -87,9 +88,9 @@ export async function POST(request) {
           // a single conversation instead of separate messages.
           subject: `New KarePort Enquiry — ${fullName}`,
           html: `
-            ${logoHtml}
             <p>You have a new enquiry from the KarePort website:</p>
             ${detailsHtml}
+            ${logoHtml}
           `,
         }),
         resend.emails.send({
@@ -97,11 +98,11 @@ export async function POST(request) {
           to: email,
           subject: 'We have received your enquiry',
           html: `
-            ${logoHtml}
             <p>Thank you for contacting KarePort.</p>
             <p>Our clinical coordination team has received your enquiry and will review the
             details shortly. A coordinator will contact you within 48 hours.</p>
             <p>Regards,<br />KarePort Team</p>
+            ${logoHtml}
           `,
         }),
       ]);
