@@ -68,9 +68,6 @@ export default function Hero() {
         <div className="font-mono text-xs uppercase tracking-widest text-[#BFD8C8]">
           KarePort — Gateway to Kerala&apos;s World-Class Healthcare
         </div>
-        <div className="mt-2 font-display text-sm font-medium italic text-gold">
-          Curated by doctors
-        </div>
         <h1 className="mt-7 max-w-[20ch] font-display text-4xl font-semibold leading-tight text-[#FBF7ED] sm:text-6xl">
           Are you getting the care you actually need?
           Or just the treatment you were given?

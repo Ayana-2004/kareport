@@ -35,7 +35,12 @@ export default function Header() {
             alt="KarePort logo"
             className="h-14 w-17 rounded-full"
           />
-          KarePort
+          <div className="flex flex-col leading-tight">
+            <span>KarePort</span>
+            <span className="font-mono text-[10px] font-normal uppercase tracking-wide text-teal">
+              Curated by Doctors
+            </span>
+          </div>
         </div>
 
         <nav className="hidden items-center gap-7 md:flex">
