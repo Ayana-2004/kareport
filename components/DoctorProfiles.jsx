@@ -67,9 +67,12 @@ export default function DoctorProfiles() {
                     href={d.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wide text-teal hover:underline"
+                    className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-teal/25 bg-teal/10 px-2.5 py-1 font-mono text-[11px] uppercase tracking-wide text-teal transition hover:bg-teal hover:text-paper"
                   >
-                    LinkedIn ↗
+                    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 shrink-0 fill-current" aria-hidden="true">
+                      <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" />
+                    </svg>
+                    LinkedIn
                   </a>
                 )}
 
